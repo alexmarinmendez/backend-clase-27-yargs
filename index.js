@@ -20,7 +20,7 @@ yargs.command({
         //generar un id para el nuevo TODO
         let id
         if (todos.length === 0) id=1
-        else id = todos[length-1].id + 1
+        else id = todos[todos.length-1].id + 1
         todos.push({ id, text: argv.todo})
         console.log(todos)
     }
